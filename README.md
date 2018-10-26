@@ -24,3 +24,20 @@ follow this blog [Jupyter And R Markdown: Notebooks With R](https://www.datacamp
 solutions from [installing-devtools-fails-beacuse-of-dependency-but-dependency-is-not-available](https://stackoverflow.com/questions/35063883/installing-devtools-fails-beacuse-of-dependency-but-dependency-is-not-available)
 
 and [installation-of-package-devtools-had-non-zero-exit-status-in-a-powerpc](https://stackoverflow.com/questions/31114991/installation-of-package-devtools-had-non-zero-exit-status-in-a-powerpc), however no need to be root.
+# Solving `%%R ` magic not working
+See [https://stackoverflow.com/questions/43682789/errorrootcell-magic-r-not-found](https://stackoverflow.com/questions/43682789/errorrootcell-magic-r-not-found)
+
+This is a link to the best answer I have found to the problem given on this thread: [R Notebook](https://answers.dataiku.com/14/in-an-r-notebook-i-have-the-error-cell-magic-r-not-found).
+
+This link states that the error means that R is not configured in your DSS instance. You need to install R manually.
+
+The commands given on the forum post are:
+
+Install the R packages RJSONIO and HTTR in any R console.
+Install the Python package rpy2:
+
+pip install rpy2
+
+Afterward, they give the following link: [configure R](http://doc.dataiku.com/dss/latest/installation/r.html).
+
+I hope this is helpful and well worded.
